@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "lighthouse": "^11.7.0",
+    "vite": "^5.2.7",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-copy": "^0.1.6",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-static-copy": "^1.0.2"
+  },
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "serve": "vite preview --port 3000",
+    "audit": "lighthouse http://localhost:3000 --only-categories=best-practices --only-categories=performance --preset=desktop --view ",
+    "start_pm2": "pm2 start server.js --name server.js"
+  
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.19.2",
+    "pm2": "^5.3.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-visualizer": "^5.12.0"
+  }
+}
